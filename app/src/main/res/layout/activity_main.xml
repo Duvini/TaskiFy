@@ -4,30 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#FFFFFF"
+    tools:context="com.example.activity.MainActivity">
 
     <ImageButton
         android:id="@+id/btn_cat_tasks"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:contentDescription="Tasks Button"
+        android:src="@drawable/ic_bg_tasks_btn"
         app:layout_constraintBottom_toTopOf="@id/btn_cat_habits"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/ic_bg_tasks_btn"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:contentDescription="Tasks Button" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/btn_cat_habits"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="Habits Button"
+        android:src="@drawable/ic_bg_habits_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_cat_tasks"
-        android:src="@drawable/ic_bg_habits_btn"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:contentDescription="Habits Button" />
+        app:layout_constraintTop_toBottomOf="@id/btn_cat_tasks" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,10 +12,26 @@
         <action
             android:id="@+id/action_tasksListFragment_to_addTasksFragment"
             app:destination="@id/addTasksFragment" />
+        <action
+            android:id="@+id/action_tasksListFragment_to_manageTasksFragment"
+            app:destination="@id/manageTasksFragment" />
     </fragment>
     <fragment
         android:id="@+id/addTasksFragment"
         android:name="com.example.fragment.AddTasksFragment"
         android:label="fragment_add_tasks"
-        tools:layout="@layout/fragment_add_tasks" />
+        tools:layout="@layout/fragment_add_tasks" >
+        <action
+            android:id="@+id/action_addTasksFragment_to_tasksListFragment"
+            app:destination="@id/tasksListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageTasksFragment"
+        android:name="com.example.fragment.ManageTasksFragment"
+        android:label="fragment_manage_tasks"
+        tools:layout="@layout/fragment_manage_tasks" >
+        <action
+            android:id="@+id/action_manageTasksFragment_to_tasksListFragment"
+            app:destination="@id/tasksListFragment" />
+    </fragment>
 </navigation>

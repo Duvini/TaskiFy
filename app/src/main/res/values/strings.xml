@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">TaskiFy</string>
-    <!-- Populating Habit Tags for DropDownMenu-->
     <string-array name="habits_tag_array">
         <item>Workout/Fitness</item>
         <item>Work/Task</item>
