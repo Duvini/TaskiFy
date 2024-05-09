@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context="com.example.activity.HabitsActivity">
 
     <TextView
@@ -25,8 +25,8 @@
         android:id="@+id/tv_desc_habits"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_below="@id/tv_title_habit"
+        android:layout_alignParentStart="true"
         android:layout_marginHorizontal="12dp"
         android:layout_marginVertical="4dp"
         android:text="A Good Habit can change your life.\nLets build."
@@ -35,9 +35,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tv_desc_habits"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_below="@id/tv_desc_habits"
         android:layout_margin="12dp"
         android:orientation="vertical">
 
@@ -45,7 +45,7 @@
             android:id="@+id/rv_habits"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:listitem="@layout/layout_card_habits"/>
+            tools:listitem="@layout/layout_card_habits" />
 
 
     </LinearLayout>
@@ -54,11 +54,11 @@
         android:id="@+id/fab_habits_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_margin="20dp"
-        android:src="@drawable/ic_add_24"
-        android:contentDescription="Add new habit" />
+        android:contentDescription="Add new habit"
+        android:src="@drawable/ic_add_24" />
 
 
 </RelativeLayout>
