@@ -1,14 +1,14 @@
-package com.example.data
+package com.example.taskify.data
 
 import android.content.Context
 import androidx.room.*
-import com.example.util.DateTypeConverter
+import com.example.taskify.util.DateTypeConverter
 
-@Database(entities = [ Tasks::class], version = 1, exportSchema = false)
+@Database(entities = [Habits::class, Tasks::class], version = 1, exportSchema = false)
 @TypeConverters(DateTypeConverter::class)
 abstract class MyDatabase : RoomDatabase() {
 
-
+    abstract fun habitsDao() : HabitsDao
     abstract fun tasksDao() : TasksDao
 
     companion object {

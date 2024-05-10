@@ -1,12 +1,12 @@
-package com.example.util
+package com.example.taskify.util
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
-import com.example.data.MyDatabase
-import com.example.data.Tasks
-import com.example.data.TasksRepository
+import com.example.taskify.data.MyDatabase
+import com.example.taskify.data.Tasks
+import com.example.taskify.data.TasksRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

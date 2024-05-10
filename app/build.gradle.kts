@@ -8,7 +8,7 @@ android {
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.taskshabits"
+        applicationId = "com.example.taskskify"
         minSdk = 22
         targetSdk = 33
         versionCode = 1
@@ -30,7 +30,7 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    namespace = "com.example.taskshabits"
+    namespace = "com.example.taskify"
 }
 
 dependencies {

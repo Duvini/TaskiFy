@@ -1,4 +1,4 @@
-package com.example.util
+package com.example.taskify.util
 
 import androidx.room.TypeConverter
 import java.util.*

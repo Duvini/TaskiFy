@@ -1,4 +1,4 @@
-package com.example.adapter
+package com.example.taskify.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,12 +6,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.example.data.Tasks
-import com.example.util.TasksDiffCallback
+import com.example.taskify.R
+import com.example.taskify.data.Tasks
+import com.example.taskify.util.TasksDiffCallback
 import com.google.android.material.checkbox.MaterialCheckBox
 import android.text.format.DateFormat
 import android.widget.ImageView
-import com.example.taskshabits.R
 
 class TasksAdapter :RecyclerView.Adapter<TasksAdapter.ViewHolder>() {
 

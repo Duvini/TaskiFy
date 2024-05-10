@@ -1,7 +1,7 @@
-package com.example.util
+package com.example.taskify.util
 
 import androidx.recyclerview.widget.DiffUtil
-import com.example.data.Tasks
+import com.example.taskify.data.Tasks
 
 class TasksDiffCallback(
     private val oldList: List<Tasks>,
