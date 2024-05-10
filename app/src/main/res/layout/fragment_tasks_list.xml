@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context="com.example.taskify.fragment.TasksListFragment">
+    android:background="@color/bg"
+    tools:context=".fragment.TasksListFragment">
 
     <TextView
         android:id="@+id/tv_title_tasks"
