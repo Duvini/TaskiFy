@@ -1,9 +1,9 @@
-package com.example.activity
+package com.example.taskify.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.findNavController
-import com.example.taskshabits.R
+import com.example.taskify.R
 
 class TasksActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
